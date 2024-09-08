@@ -33,6 +33,17 @@ public class CounterController {
 
 
   /**
+   * 第一次部署测试
+   * @return API response json
+   */
+  @GetMapping(value = "/api/test")
+  ApiResponse test() {
+    logger.info("/api/test get request");
+
+    return ApiResponse.ok("test success");
+  }
+
+  /**
    * 获取当前计数
    * @return API response json
    */
