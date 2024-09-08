@@ -38,7 +38,7 @@ public class CounterController {
    */
   @GetMapping(value = "/api/test")
   ApiResponse test() {
-    logger.info("/api/test1 get request");
+    logger.info("/api/test get request");
 
     return ApiResponse.ok("test success");
   }
